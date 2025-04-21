@@ -2,85 +2,47 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HAXPROREBORN</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #121212;
-      color: #fff;
-    }
-    header {
-      background-color: #1e1e1e;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: #f7c14b;
-    }
-    nav a {
-      color: #fff;
-      margin-left: 20px;
-      text-decoration: none;
-    }
-    nav a:hover {
-      color: #f7c14b;
-    }
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-      background: linear-gradient(to right, #1e1e1e, #2e2e2e);
-    }
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 40px;
-    }
-    .btn {
-      background-color: #f7c14b;
-      border: none;
-      padding: 15px 30px;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    footer {
-      background-color: #1e1e1e;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      color: #777;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAXPROREBORN - ร้านขายเกม & โปรแกรมช่วยเล่น</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #121212; color: white; margin: 0; padding: 0; }
+        header { background-color: #ff0000; padding: 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 28px; }
+        nav { text-align: center; padding: 10px; background: #1e1e1e; }
+        nav a { margin: 0 10px; color: white; text-decoration: none; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
+        .product { background-color: #1e1e1e; padding: 15px; border-radius: 8px; text-align: center; }
+        .product h2 { font-size: 18px; margin: 10px 0; }
+        .buy-button { background-color: #ff0000; color: white; padding: 10px; border: none; border-radius: 5px; text-decoration: none; display: inline-block; }
+        footer { background-color: #1e1e1e; text-align: center; padding: 10px; font-size: 14px; margin-top: 30px; }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="logo">HAXPROREBORN</div>
+    <header>
+        <h1>HAXPROREBORN</h1>
+        <p>ร้านขายเกม โค้ดเกม และโปรแกรมช่วยเล่น</p>
+    </header>
     <nav>
-      <a href="#">หน้าหลัก</a>
-      <a href="#">สมัครสมาชิก</a>
-      <a href="#">ติดต่อเรา</a>
+        <a href="index.html">หน้าหลัก</a>
+        <a href="product.html">รายละเอียดสินค้า</a>
+        <a href="order.html">สั่งซื้อ</a>
+        <a href="admin.html">แอดมิน</a>
     </nav>
-  </header>
-
-  <section class="hero">
-    <h1>ยินดีต้อนรับสู่ HAXPROREBORN</h1>
-    <p>เว็บสำหรับคนรัก MOD, HACK และความล้ำหน้าของเกม</p>
-    <a class="btn" href="#">สมัครสมาชิกเลย</a>
-  </section>
-
-  <footer>
-    © 2025 HAXPROREBORN. All rights reserved.
-  </footer>
+    <div class="product-grid">
+        <div class="product">
+            <h2>GTA V Steam Key</h2>
+            <p>ราคา: 250 บาท</p>
+            <a href="product.html" class="buy-button">ดูรายละเอียด</a>
+        </div>
+        <div class="product">
+            <h2>Free Fire Mod Menu</h2>
+            <p>ราคา: 100 บาท</p>
+            <a href="product.html" class="buy-button">ดูรายละเอียด</a>
+        </div>
+    </div>
+    <footer>
+        © 2025 HAXPROREBORN | ติดต่อ: LINE: @haxproreborn
+    </footer>
 </body>
 </html>
