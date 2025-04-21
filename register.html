@@ -2,43 +2,22 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>สมัครสมาชิก | HAXPROREBORN</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #111;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        main {
-            max-width: 800px;
-            margin: 40px auto;
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        iframe {
-            width: 100%;
-            height: 800px;
-            border: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>สมัครสมาชิก</title>
 </head>
 <body>
-    <header>
-        <h1>HAXPROREBORN</h1>
-        <p>สมัครสมาชิกผ่านอีเมล</p>
-    </header>
-    <main>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8D4yxc4warhvpRPGfXGxNBgkSUcC3aD9ffV6gUIum2WUGLw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">กำลังโหลด…</iframe>
-    </main>
+  <h2>สมัครสมาชิก</h2>
+  <form action="save.php" method="POST">
+    <label>ชื่อผู้ใช้:</label><br>
+    <input type="text" name="username" required><br><br>
+
+    <label>อีเมล:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>รหัสผ่าน:</label><br>
+    <input type="password" name="password" required><br><br>
+
+    <input type="submit" value="สมัครสมาชิก">
+  </form>
 </body>
 </html>
